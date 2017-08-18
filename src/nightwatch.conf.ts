@@ -7,7 +7,7 @@ const settings: NightWatchOptions = {
 	output_folder: paths.reports,
 	page_objects_path: paths.pages,
 	custom_commands_path: [paths.commands],
-	// custom_assertions_path: [paths.assertions],
+	custom_assertions_path: [paths.assertions],
 	// globals_path: paths.globals,
 	selenium: {
 		server_path: path.join(paths.bin, 'selenium.jar'),

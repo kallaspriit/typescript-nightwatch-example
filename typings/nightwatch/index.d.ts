@@ -1,4 +1,28 @@
 ﻿declare module 'nightwatch' {
+	export interface CustomAssertionResult {
+		value: string;
+	}
+
+	export interface CustomAssertionCallback {
+		(): any;
+	}
+
+	export interface CustomAssertion {
+		message: string;
+
+		api: NightWatchClient;
+
+		expected(): any;
+
+		pass(value: string): boolean;
+
+		failure(result: boolean): void;
+
+		value(result: CustomAssertionResult): string;
+
+		command(callback: CustomAssertionCallback): NightWatchClient;
+	}
+
 	export interface PageCommand {
 		(browser: NightWatchClient, ...args: any[]): void;
 	}
