@@ -1,2 +1,6 @@
-# typescript-nightwatch-example
-Working nightwatch browser automated testing example using TypeScript.
+# TypeScript Nightwatch Example
+**Working nightwatch browser automated testing example using TypeScript.**
+
+## Commands
+- `yarn install` the first time to install dependencies (or use npm)
+- `yarn start` to run the tests (automatically downloads selenium and chromedriver if missing)
