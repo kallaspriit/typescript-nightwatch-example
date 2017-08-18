@@ -9,7 +9,7 @@
 		"prettier": "prettier --trailing-comma all --single-quote --use-tabs --no-bracket-spacing --print-width 120 --write src/**/*.ts",
 		"setup-selenium": "yarn build && node build/scripts/setup-selenium",
 		"start": "yarn build && yarn setup-selenium && nightwatch --config=build/nightwatch.conf.js",
-		"precommit": "yarn prettier"
+		"precommit": "yarn prettier && git add -A"
 	},
 	"author": "",
 	"license": "ISC",
