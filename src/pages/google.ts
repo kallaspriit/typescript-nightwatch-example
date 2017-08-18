@@ -1,7 +1,12 @@
+import * as config from 'config';
 import {NightWatchClient, PageObject} from 'nightwatch';
+// import {IPageConfig} from '../config/default';
+
+const pageConfig = config.get<IPageConfig>('pages.google');
 
 const page: PageObject = {
-	url: 'https://www.google.com',
+	url: pageConfig.url,
+	// url: 'https://www.google.com',
 
 	commands: [
 		{
