@@ -37,7 +37,7 @@ const settings: NightWatchOptions = {
 			desiredCapabilities: {
 				browserName: 'chrome',
 				chromeOptions: {
-					args: ['window-size=1920,1280', '--disable-gpu'],
+					args: ['window-size=1920,1280', '--disable-gpu' /*, 'headless'*/],
 				},
 				javascriptEnabled: true,
 				acceptSslCerts: true,
