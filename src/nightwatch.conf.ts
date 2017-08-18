@@ -6,7 +6,7 @@ const settings: NightWatchOptions = {
 	src_folders: [paths.tests],
 	output_folder: paths.reports,
 	page_objects_path: paths.pages,
-	// custom_commands_path: [paths.commands],
+	custom_commands_path: [paths.commands],
 	// custom_assertions_path: [paths.assertions],
 	// globals_path: paths.globals,
 	selenium: {

@@ -2180,8 +2180,12 @@
 		globals: any;
 		launch_url: string;
 
+		// add support for pages (but don't know anything about them.. any better way?)
 		page: {
 			[x: string]: () => any;
 		};
+
+		// add support for custom commands (again no typescrypt help for these..)
+		[x: string]: any;
 	}
 }
